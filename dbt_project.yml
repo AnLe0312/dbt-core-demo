@@ -34,4 +34,7 @@ models:
   dbt_core_demo:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+      materialized: view
+      sub-proj:
+        materialized: table
+    materialized: table
